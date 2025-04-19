@@ -22,3 +22,4 @@ gcloud/
 # But exclude their .git directories
 alacritty/themes/.git/
 nvim/.git/
+nvim/pack/github/start/copilot.vim/.git/
