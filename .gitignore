@@ -1,0 +1,24 @@
+# Ignore sensitive data
+**/auth*
+**/token*
+**/secret*
+**/key*
+**/credential*
+**/password*
+**/history
+**/*.log
+
+# Specific directories to ignore (customize as needed)
+yarn/
+npm/
+configstore/
+gh/
+gcloud/
+
+# Do not ignore these directories (they may contain git repos)
+!alacritty/
+!nvim/
+
+# But exclude their .git directories
+alacritty/themes/.git/
+nvim/.git/
