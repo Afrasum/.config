@@ -1,25 +1,36 @@
-# Ignore sensitive data
-**/auth*
-**/token*
-**/secret*
-**/key*
-**/credential*
-**/password*
-**/history
-**/*.log
+# macOS files
+.DS_Store
 
-# Specific directories to ignore (customize as needed)
-yarn/
-npm/
-configstore/
-gh/
-gcloud/
+# Backup and swap files
+*~
+*.swp
+*.swo
+*.swn
 
-# Do not ignore these directories (they may contain git repos)
-!alacritty/
-!nvim/
+# Vim swap and undo files
+*.bak
+*.undo
 
-# But exclude their .git directories
-alacritty/themes/.git/
-nvim/.git/
-nvim/pack/github/start/copilot.vim/.git/
+# Python cache
+__pycache__/
+
+# Ignore .git directories inside plugin folders if not using submodules
+.tmux/plugins/**/.git/
+
+# Neovim plugin directories (e.g., plugin managers)
+nvim/.local/
+nvim/undo/
+nvim/session.vim
+
+# Tmux Plugin Manager data
+.tmux/plugins/tpm/
+
+# Environment and secret files
+.env
+.env.*
+
+# Log files
+*.log
+
+# Ignore any other cache directories
+cache/
